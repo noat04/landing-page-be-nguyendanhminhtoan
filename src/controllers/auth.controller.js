@@ -19,7 +19,7 @@ export const register = asyncHandler(async (req, res) => {
   const user = await User.create(req.body);
   const token = signAuthToken(user);
   setAuthCookie(res, token);
-  res.status(201).json({ user });
+  res.status(201).json({ user, token });
 });
 
 export const login = asyncHandler(async (req, res) => {
@@ -30,7 +30,7 @@ export const login = asyncHandler(async (req, res) => {
 
   const token = signAuthToken(user);
   setAuthCookie(res, token);
-  res.json({ user });
+  res.json({ user, token });
 });
 
 export const logout = asyncHandler(async (_req, res) => {
