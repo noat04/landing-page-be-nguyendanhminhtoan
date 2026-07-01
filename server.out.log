@@ -1,0 +1,6 @@
+
+> landing-page-mini-commerce-backend@1.0.0 start
+> node src/server.js
+
+MongoDB connected
+Server listening on http://localhost:4000

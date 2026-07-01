@@ -1,0 +1,119 @@
+.mc-chat-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9998;
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 50%;
+  background: #126c5b;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(18, 108, 91, 0.26);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.mc-chat-panel {
+  position: fixed;
+  right: 20px;
+  bottom: 88px;
+  z-index: 9999;
+  display: none;
+  width: min(360px, calc(100vw - 32px));
+  height: min(520px, calc(100vh - 120px));
+  overflow: hidden;
+  border: 1px solid #d9e2df;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 24px 64px rgba(30, 41, 59, 0.2);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.mc-chat-panel.is-open {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.mc-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid #edf2f0;
+  background: #f8fbfa;
+}
+
+.mc-chat-title {
+  margin: 0;
+  color: #12211d;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.mc-chat-close {
+  border: 0;
+  background: transparent;
+  color: #53645f;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.mc-chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding: 14px;
+  background: #fbfcfc;
+}
+
+.mc-chat-bubble {
+  max-width: 82%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #17211f;
+  font-size: 14px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.mc-chat-bubble.user {
+  align-self: flex-end;
+  background: #dcefeb;
+}
+
+.mc-chat-bubble.assistant {
+  align-self: flex-start;
+  background: #fff;
+  border: 1px solid #e6ecea;
+}
+
+.mc-chat-form {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #edf2f0;
+  background: #fff;
+}
+
+.mc-chat-input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid #cad8d4;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #12211d;
+  font-size: 14px;
+}
+
+.mc-chat-send {
+  border: 0;
+  border-radius: 8px;
+  background: #126c5b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0 14px;
+}
