@@ -44,6 +44,24 @@ Chen vao landing page:
 
 File demo co san tai `public/demo.html`.
 
+Frontend React trong thu muc `landing-page-design-nguyendanhminhtoan` da tich hop san cua so chatbot goi `POST /api/chatbot/message`. Neu khong cau hinh AI provider, backend se tu dong tra loi theo du lieu san pham trong MongoDB.
+
+Tuy chon ket noi AI trong `.env`:
+
+```bash
+CHATBOT_PROVIDER=rule-based
+
+# OpenAI
+CHATBOT_PROVIDER=openai
+OPENAI_API_KEY=your_openai_api_key
+OPENAI_MODEL=gpt-4o-mini
+
+# Gemini
+CHATBOT_PROVIDER=gemini
+GEMINI_API_KEY=your_gemini_api_key
+GEMINI_MODEL=gemini-1.5-flash
+```
+
 ## Seed san pham mau
 
 Sau khi cau hinh Mongo Atlas:

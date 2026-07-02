@@ -4,5 +4,5 @@
 
 MongoDB connected
 Server listening on http://localhost:4000
-[0mGET /api/products [32m200[0m 341.499 ms - 4467[0m
-[0mGET /api/products [32m200[0m 100.031 ms - 4467[0m
+[0mGET /health [32m200[0m 1.915 ms - 49[0m
+[0mPOST /api/chatbot/message [32m200[0m 115.314 ms - 98[0m
