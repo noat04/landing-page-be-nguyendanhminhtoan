@@ -1,4 +1,4 @@
-import { Router } from "express";
+    import { Router } from "express";
 import { addFavorite, listFavorites, removeFavorite } from "../controllers/favorites.controller.js";
 import { requireAuth } from "../middleware/auth.js";
 
